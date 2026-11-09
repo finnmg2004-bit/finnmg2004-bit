@@ -28,9 +28,9 @@ A Unitree Go2 quadruped in MuJoCo that **hears the house for its owner** (doorbe
 A Robotnik mobile base with a 7-joint Kinova arm in PyBullet drives to a target and reaches it with its hand. We collected expert demonstrations, trained Ridge, MLP and GRU policies to copy it, and tested them by letting each model drive the robot in closed loop.
 
 - 🧱 **Pipeline:** planned and collected 1,000+ expert episodes with DART noise for recovery data, plus split-by-episode train/val/test and out-of-range test pools
-- 🧠 **My part:** built the MLP base and arm policies and their closed-loop evaluation, wrapped so they plug into the shared pipeline
-- 📊 **Team result:** the final GRU policy reaches the target in **95% of unseen test episodes** (expert: 100%) with **0.9 cm** median-scale final error, runs in **~100 µs** per 1 ms control step, and holds up better than the expert under heavy actuator noise
-
+- 🧠 **My part:** built the MLP base and arm policies and their closed-loop evaluation, wrapped so they plug into the shared pipeline. My MLP reached the target in **95% of unseen test episodes**, matching the team's final GRU
+- 📊 **Team result:** the final GRU policy also hit **95%** on test (expert: 100%) with **0.9 cm** final error, runs in **~100 µs** per 1 ms control step, and holds up better than the expert under heavy actuator noise
+  
 ## 🔭 What I'm up to
 
 - 🎓 Studying Robotics & AI (MSc) at UCL, with a focus on ROS 2, simulation, and robot learning
